@@ -9,9 +9,12 @@
           <el-col :sm="1"><a href="#">文档</a></el-col>
           <el-col :sm="1"><a href="#">博客</a></el-col>
           <el-col :sm="2"><a href="#">简体中文</a></el-col>
+          <el-col :sm="2">
+            <a href="#"><span class="iconfont icon-github"> </span> </a>
+          </el-col>
         </el-row>
         <el-row class="hidden-sm-and-up box">
-          <el-col :span="1"> 222 </el-col>
+          <el-col :span="1"><span class="iconfont icon-list"></span></el-col>
           <div>
             <img
               src="http://www.axios-js.com/logo.svg "
@@ -25,31 +28,32 @@
         <div class="title">轻量级移动端Vue组件库</div>
         <div class="ins">
           <div class="install"></div>
-          <div class="install_right">></div>
+          <a href="#">
+            <div class="install_right">
+              <span class="iconfont icon-V"></span></div
+          ></a>
         </div>
       </div>
     </div>
     <div class="mid w">
       <ul class="clearfix">
         <li>
-          <h2>组件</h2>
-          <div>使用组件 Demo 快速体验交互细节</div>
+          <h2><span class="iconfont icon-shandian rr"></span>组件</h2>
+          <div>使用组件，快速体验交互细节</div>
         </li>
         <li>
-          <h2>资源</h2>
-          <div>
-            载相关资源，用其快速搭建页面原型或高保真视觉稿，提升产品设计效率
-          </div>
+          <h2><span class="iconfont icon-pan_icon"></span>资源</h2>
+          <div>下载相关资源，提升产品设计效率</div>
         </li>
         <li>
-          <h2>指南</h2>
-          <div>
-            了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。
-          </div>
+          <h2><span class="iconfont icon-shangchuan"></span>指南</h2>
+          <div>了解设计指南，设计高效易用的产品。</div>
         </li>
         <li>
-          <h2>主题</h2>
-          <div>在线主题编辑器，可视化定制和管理站点主题、组件样式</div>
+          <h2>
+            <span class="iconfont icon-Settingscontroloptions"></span>配置
+          </h2>
+          <div>具有丰富的配置项、自定义组件样式</div>
         </li>
       </ul>
     </div>
@@ -58,10 +62,14 @@
     <footer>
       <div class="w clearfix">
         <div class="fl">
-          <div>© 2020 zum/ui</div>
-          <div>Documentation licensed under CC BY 4.0.</div>
+          <div><a href="javascript:;">© 2020 zum/ui</a></div>
+          <div>
+            <a href="javascript:;">Documentation licensed under CC BY 4.0.</a>
+          </div>
         </div>
-        <div class="fr"><span>1</span><span>2</span></div>
+        <div class="fr">
+          <a href="javascript:;"><span class="iconfont icon-github"> </span></a>
+        </div>
       </div>
     </footer>
   </div>
@@ -95,6 +103,10 @@ export default {};
   }
   .mid li {
     width: 100% !important;
+    text-align: center !important;
+  }
+  .mid li div {
+    padding-left: 0 !important;
   }
   .sup {
     width: 100% !important;
@@ -135,8 +147,12 @@ export default {};
     & .el-col:nth-child(2) {
       margin: 0 20px 0 35px;
     }
+    & .el-col:nth-child(3) {
+      margin-right: 20px;
+    }
     & .el-col:nth-child(4) {
       float: right;
+      text-align: right;
     }
   }
 }
@@ -159,10 +175,16 @@ export default {};
   }
   .ins {
     display: flex;
+    a {
+      display: block;
+      background-color: #009688;
+      &:hover {
+        background-color: #00baa9;
+      }
+    }
     .install_right {
       width: 45px;
       height: 48px;
-      background-color: #009688;
       line-height: 48px;
       text-align: center;
       color: #fff;
@@ -177,6 +199,7 @@ export default {};
     line-height: 47px;
     text-align: center;
     font-size: 18px;
+
     &::before {
       content: "$ ";
       padding-right: 3px;
@@ -184,6 +207,7 @@ export default {};
     }
     &::after {
       content: "npm install zum/ui";
+      cursor: pointer;
       font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
   }
@@ -207,9 +231,18 @@ export default {};
     height: 100px;
     margin: 50px 0;
     line-height: 50px;
-    text-align: center;
+    text-align: left;
+    span {
+      margin-right: 20px;
+    }
+    .rr {
+      margin-right: -10px;
+    }
     h2 {
       color: #009688;
+    }
+    div {
+      padding-left: 40px;
     }
   }
 }
@@ -262,6 +295,12 @@ footer {
   }
   .fr {
     float: right;
+  }
+  a {
+    color: @gray_font;
+    &:hover {
+      color: @hv_font;
+    }
   }
 }
 </style>

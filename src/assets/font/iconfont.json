@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2155821",
+      "name": "铅笔",
+      "font_class": "pan_icon",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "2681706",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3876518",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "5485649",
+      "name": "上传 (1)",
+      "font_class": "shangchuan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "8760044",
+      "name": "fork",
+      "font_class": "fork",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "11753455",
+      "name": "右箭头",
+      "font_class": "V",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "11982708",
+      "name": "Settings, control, options",
+      "font_class": "Settingscontroloptions",
+      "unicode": "e9d3",
+      "unicode_decimal": 59859
+    },
+    {
+      "icon_id": "12880824",
+      "name": "list",
+      "font_class": "list",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "13331542",
+      "name": "start",
+      "font_class": "start",
+      "unicode": "e527",
+      "unicode_decimal": 58663
+    }
+  ]
+}
